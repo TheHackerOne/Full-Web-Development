@@ -1,4 +1,21 @@
-// call
+let obj1 = {
+    name :"sukanya",
+    age: 11,
+    printDetails: function (){
+        console.log(this.name + " " + this.age)
+    }
+}
+
+let obj2 = {
+    name: "yash",
+    age: 34
+}
+
+// funtion borrowing
+obj1.printDetails.call(obj2)
+
+
+//////////////////////////////////////
 
 let person1 = {
     name : "yash chaudhary", 
