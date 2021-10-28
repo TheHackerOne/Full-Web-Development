@@ -33,11 +33,11 @@ Array.prototype.arrMethodFilter = function(cb){
     return newArr
 }
 
-function cb(x){
+function cb1(x){
     return x % 2 == 0
 }
 
-console.log(arr.arrMethodFilter(cb))
+console.log(arr.arrMethodFilter(cb1))
 
 
 // reduce
@@ -54,8 +54,8 @@ Array.prototype.arrMethodReduce = function(cb){
     return sum
 }
 
-function cb(sum, ele){
+function cb2(sum, ele){
     return sum + ele;
 }
 
-console.log(arr.arrMethodReduce(cb))
+console.log(arr.arrMethodReduce(cb2))
