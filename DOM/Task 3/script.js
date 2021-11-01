@@ -1,16 +1,13 @@
-// HTML collection VS Node list
-// insertBefore -> paret Element, element before which it must be inserted, element to be added
+// getAttribute
+// setAttribute
+// classList -> add, remove, contains
 
+let allCards = document.querySelectorAll('div')
 
-
-
-let list = document.querySelectorAll('li')
-let btn = document.querySelector('button')
-
-btn.addEventListener('click', (e) => {
-    let parentEle = document.querySelector('ul')
-    let element = document.createElement('li')
-    element.innerHTML = '6'
-    let afterElement = list[5]
-    parentEle.insertBefore(element, afterElement)
+allCards.forEach((card) => {
+    card.addEventListener('click', () => {
+        let color = card.getAttribute('data-color')
+        card.setAttribute('data-color', 'used')
+        card.classList.add(color)
+    })
 })
