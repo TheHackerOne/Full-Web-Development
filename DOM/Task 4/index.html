@@ -13,43 +13,83 @@
         }
         body{
             display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .card{
-            height: 200px;
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .outer{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .movies{
             width: 200px;
-            background-color: ghostwhite;
+            height: 200px;
             border: 2px solid red;
             margin: 10px;
         }
-        .blue{
-            background-color: blue;
-        }
-        .black{
-            background-color: black;
-        }
-        .yellow{
-            background-color: yellow;
-        }
-        .green{
-            background-color: green;
-        }
-        .brown{
-            background-color: brown;
-        }
-        .red{
-            background-color: red;
+        .centeric{
+            text-align: center;
+            width: 200px;
         }
     </style>
 </head>
-
-
 <body>
-    <div class='card' data-color='blue'></div>
-    <div class='card' data-color='yellow'></div>
-    <div class='card' data-color='red'></div>
-    <div class='card' data-color='green'></div>
-    <div class='card' data-color='black'></div>
-    <div class='card' data-color='brown'></div>
+    <h1>Book my show</h1>
+    <select class="centeric" name="genre" id="genre">
+        <option value="none">none</option>
+        <option value="romance">romance</option>
+        <option value="comedy">comedy</option>
+        <option value="action">action</option>
+    </select>
+    <div class="outer">
+        <div class="movies">
+            <h3 class="heading">Example 1</h3>
+            <p class="price" data-category="action">200</p>
+        </div>
+        <div class="movies">
+            <h3 class="heading">Example 2</h3>
+            <p class="price" data-category="romance">200</p>
+        </div>
+        <div class="movies">
+            <h3 class="heading">Example 3</h3>
+            <p class="price" data-category="comedy">200</p>
+        </div>
+        <div class="movies">
+            <h3 class="heading">Example 4</h3>
+            <p class="price" data-category="action">200</p>
+        </div>
+        <div class="movies">
+            <h3 class="heading">Example 5</h3>
+            <p class="price" data-category="comedy">200</p>
+        </div>
+        <div class="movies">
+            <h3 class="heading">Example 6</h3>
+            <p class="price" data-category="romance">200</p>
+        </div>
+        <div class="movies">
+            <h3 class="heading">Example 7</h3>
+            <p class="price" data-category="romance">200</p>
+        </div>
+        <div class="movies">
+            <h3 class="heading">Example 8</h3>
+            <p class="price" data-category="action">200</p>
+        </div>
+        <div class="movies">
+            <h3 class="heading">Example 9</h3>
+            <p class="price" data-category="comedy">200</p>
+        </div>
+        <div class="movies">
+            <h3 class="heading">Example 10</h3>
+            <p class="price" data-category="comedy">200</p>
+        </div>
+    </div>
+
     <script src="./script.js"></script>
 </body>
 </html>
