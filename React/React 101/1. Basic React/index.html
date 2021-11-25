@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- First link is for React Algo -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <!-- Second Link is for React DOM features -->
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Babel to convert JSX into html -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+<script type='text/babel'>
+    // HOW WE DO IT IN NORMAL JAVASCRIPT
+
+    // let ele = document.createElement('h1')
+    // ele.innerHTML = "Hello Yash Chaudhary!!"
+    // let root = document.getElementById('root')
+    // root.appendChild(ele)
+
+
+    // HOW WE DO IT USING RAW REACT
+
+    // ele = React.createElement('h1', {
+    //     children:['Yash hii !!']
+    // })
+
+    // ReactDOM.render(ele, root);
+
+
+    // HOW WE DO IT IN JSX (javascript XML)
+    // things not allowed inside "return()"
+    // 1. no variable declaration and function declaration
+    // 2. no loops, can only use higher order functions
+    // 3. if else not allowed, use ternary operator
+    // 4. object render not  allowed, use arrays
+    
+    function Element(props){
+        return(
+            <h1>Hi i am {props.name} and this is React using JSX</h1>
+        )
+    }
+    ReactDOM.render(<Element name="Yash chaudhary"/>, document.getElementById('root'));
+</script>
+</html>
