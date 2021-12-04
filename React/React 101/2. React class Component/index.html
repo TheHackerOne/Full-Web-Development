@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- First link is for React Algo -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <!-- Second Link is for React DOM features -->
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Babel to convert JSX into html -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+<script type='text/babel'>
+    class Counter extends React.Component{
+        constructor(){
+            super() // hume isse is class ka this milta hai
+            this.state = {
+                count :0,
+            }
+        }
+
+        increment = () => {
+            this.setState({
+                count: this.state.count+1
+            })
+        }
+
+        decrement = () => {
+            this.setState({
+                count: this.state.count-1
+            })
+        }
+
+        render(){
+            return (
+                <React.Fragment>
+                    <button onClick={this.decrement}>minus</button>
+                    <h1>{this.state.count}</h1>
+                    <button onClick={this.increment}>plus</button>
+                </React.Fragment>
+            )
+        }
+    }
+
+    ReactDOM.render(<Counter/>, document.getElementById('root'));
+
+</script>
+</html>
