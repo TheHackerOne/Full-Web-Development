@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f5f8;
+}
+
+.container{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading{
+    margin: 20px 0px 30px 0px;
+    font-size: 25px;
+    color: #102A42;
+}
+.heading h1{
+    font-weight: 400;
+}
+
+.border{
+    height: 6px;
+    width: 100px;
+    background-color: #49A6E9;
+    width: 50%;
+    margin: auto;
+}
+
+.image{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    position: relative;
+}
+
+.circle{
+    height: 150px;
+    position: absolute;
+    bottom: 7px;
+    left: 7px;
+    width: 150px;
+    background-color: #49A6E9;
+    border-radius: 50%;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card{
+    background-color: white!important;
+    border-radius: 20px;
+    width: 50%;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image, .head, .info, .btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #102A42;
+    background-color: white;
+}
+
+.head h1{
+    font-size: 25px;
+    letter-spacing: 3.2px;
+    font-weight: 500;
+    background-color: white;
+    text-transform: capitalize;
+}
+
+.head h2{
+    color: #49A6E9;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 20px;
+    background-color: white;
+}
+
+.info p{
+    background-color: white;
+    width: 96%;
+    text-align: center;
+    color: hsl(210, 22%, 49%);
+    margin: 17px 0px;
+    font-size: 14px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+}
+
+.btns p{
+    font-size: 33px;
+    color: #73b2df;
+    background-color: white;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.click{
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid #49A6E9;
+    cursor: pointer;
+}
+
